@@ -3,69 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flow Barbershop</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>FLOW BARBERSHOP</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <style>
+    /* Header background image */
+    header {
+      background-image: url('images/flowbarbershopimage2.png');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="font-sans text-gray-800">
 
-  <!-- Hero Section -->
-  <section class="relative h-96 w-full">
-    <img src="images/flowbarbershopimage2.jpg" alt="Flow Barbershop" class="absolute inset-0 w-full h-full object-cover brightness-75">
-    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-6">
-      <h1 class="text-5xl font-bold drop-shadow-lg">FLOW BARBERSHOP</h1>
-      <p class="mt-2 text-xl drop-shadow-md">914 Concord St #2, Framingham, MA 01701</p>
-      <p class="mt-1 text-lg drop-shadow-md">Phone: (774) 204-1313</p>
+  <!-- Header -->
+  <header class="h-screen flex items-center justify-center text-white">
+    <div class="text-center bg-black bg-opacity-50 p-8 rounded-xl">
+      <h1 class="text-5xl font-bold mb-4">FLOW BARBERSHOP</h1>
+      <p class="text-xl">Fresh cuts, clean fades, and precise beard grooming in a welcoming environment.</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="py-16 px-6 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">About Us</h2>
+      <p>Flow Barbershop offers professional grooming services, making sure every client leaves looking sharp and confident.</p>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-6">About Us</h2>
-    <p class="text-center text-lg">Flow Barbershop offers fresh cuts, clean fades, and precise beard grooming in a professional, welcoming environment. We make sure every client leaves looking sharp and confident.</p>
-  </section>
-
-  <!-- Gallery Section -->
+  <!-- Gallery -->
   <section class="py-16 px-6">
     <h2 class="text-3xl font-semibold text-center mb-10">Gallery</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-      
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
       <!-- Image 1 -->
       <div class="overflow-hidden rounded-2xl shadow-lg transform transition duration-300 hover:scale-105">
-        <a href="images/flowbarbershopimage1.jpg" class="glightbox">
-          <img src="images/flowbarbershopimage1.jpg" class="w-full h-full object-cover">
+        <a href="images/flowbarbershopimage1.png" class="glightbox">
+          <img src="images/flowbarbershopimage1.png" class="w-full h-full object-cover">
         </a>
       </div>
 
       <!-- Image 2 -->
       <div class="overflow-hidden rounded-2xl shadow-lg transform transition duration-300 hover:scale-105">
-        <a href="images/flowbarbershopimage2.jpg" class="glightbox">
-          <img src="images/flowbarbershopimage2.jpg" class="w-full h-full object-cover">
+        <a href="images/flowbarbershopimage2.png" class="glightbox">
+          <img src="images/flowbarbershopimage2.png" class="w-full h-full object-cover">
         </a>
       </div>
 
     </div>
   </section>
 
-  <!-- Hours Section -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-6">Hours of Operation</h2>
-    <ul class="text-center text-lg">
-      <li>Monday - Saturday: 9:00 AM – 7:00 PM</li>
-      <li>Sunday: Closed</li>
-    </ul>
-  </section>
+  <!-- Location -->
+  <section class="py-16 px-6 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">Location</h2>
+      <p>914 Concord St #2, Framingham, MA 01701</p>
+      <p class="mt-2">Hours: Monday - Saturday 9:00 AM – 7:00 PM | Sunday Closed</p>
+      <p class="mt-2">Phone: (774) 204-1313</p>
 
-  <!-- Map Section -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-semibold text-center mb-6">Find Us</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Google Maps -->
-      <iframe class="w-full h-64 rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.186580079359!2d-71.41880198454545!3d42.28391997919198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37ae04d4e929f%3A0x7f79697f7a8a7fbd!2sFlow%20Barbershop!5e0!3m2!1sen!2sus!4v1701416513952!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-      <!-- Apple Maps Link -->
-      <div class="flex justify-center items-center bg-gray-200 rounded-xl h-64">
-        <a href="https://maps.apple.com/?address=914%20Concord%20St%20%232,%20Framingham,%20MA%2001701" target="_blank" class="text-blue-600 text-lg font-semibold hover:underline">Open in Apple Maps</a>
+      <div class="flex justify-center gap-4 mt-6">
+        <a href="https://www.google.com/maps/search/?api=1&query=914+Concord+St+%232,+Framingham,+MA+01701" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Google Maps</a>
+        <a href="https://maps.apple.com/?address=914+Concord+St+%232,+Framingham,+MA+01701" target="_blank" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900">Apple Maps</a>
       </div>
     </div>
   </section>
