@@ -19,18 +19,20 @@
     }
 
     /* Hero Section */
-    .hero {
-      position: relative;
-      width: 100%;
-      min-height: 60vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: url('images/flowbarbershopimage2.png') no-repeat center top;
-      background-size: cover;
-      color: white;
+  .hero {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('images/flowbarbershopimage2.png') no-repeat center center;
+  background-size: contain; /* instead of cover */
+  background-color: black;  /* fallback */
+  color: white;
+}
     }
 
     .hero h1 {
