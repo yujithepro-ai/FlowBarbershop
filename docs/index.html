@@ -9,114 +9,76 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Lato', sans-serif;
       background-color: black;
       color: white;
+      font-family: 'Lato', sans-serif; /* Normal text */
     }
-
-    /* Hero Section */
-    .hero {
-      position: relative;
-      width: 100%;
-      min-height: 60vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background: url('flowbarbershopimage2.png') no-repeat center top;
-      background-size: cover;
-      color: white;
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif; /* Titles */
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
     }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 4rem;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-      margin: 0;
-      padding: 0 1rem;
-    }
-
-    .hero p {
-      font-size: 1.5rem;
-      text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
-      margin-top: 1rem;
-      padding: 0 1rem;
-    }
-
-    /* Location & Hours */
-    .location {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 4rem 2rem;
-    }
-
-    .location h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
-    }
-
-    .location p, .location ul {
-      font-size: 1.5rem;
-      margin: 0.5rem 0;
-    }
-
-    /* Maps Section */
-    .maps {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      padding: 3rem 1rem;
-      width: 100%;
-    }
-
     iframe {
-      width: 90%;
-      max-width: 800px;
-      height: 300px;
       border: 0;
       border-radius: 1rem;
     }
+    #hero img {
+      max-height: 250px;
+      object-contain: contain;
+      margin-top: 20px;
+    }
   </style>
 </head>
-<body>
+<body class="overflow-x-hidden">
 
-  <!-- Hero Section with background image -->
-  <section class="hero">
-    <h1>FLOW BARBERSHOP</h1>
-    <p>Fresh cuts, clean fades, and precise beard grooming</p>
+  <!-- Hero Section -->
+  <header id="hero" class="relative h-[350px] sm:h-[400px] flex flex-col items-center justify-start pt-8">
+    <img src="images/flowbarbershopimage2.png" alt="Flow Barbershop Logo">
+    <div class="relative z-10 text-center mt-4 px-4">
+      <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-white">
+        FLOW BARBERSHOP
+      </h1>
+      <p class="text-lg sm:text-xl md:text-2xl text-white mt-2">
+        Fresh cuts, clean fades, and precise beard grooming
+      </p>
+    </div>
+  </header>
+
+  <!-- Location & Hours Section -->
+  <section class="py-16 px-6 flex flex-col md:flex-row justify-center items-start max-w-6xl mx-auto gap-8">
+    <div class="flex-1 bg-gray-900 p-12 rounded-2xl shadow-xl">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-white">Location & Hours</h2>
+      <p class="text-xl sm:text-2xl mb-3"><strong>Address:</strong> 914 Concord St #2, Framingham, MA 01701</p>
+      <p class="text-xl sm:text-2xl mb-3"><strong>Phone:</strong> (774) 204-1313</p>
+      <p class="text-xl sm:text-2xl mb-2"><strong>Hours:</strong></p>
+      <ul class="text-xl sm:text-2xl list-disc list-inside">
+        <li>Monday - Saturday: 9:00 AM – 7:00 PM</li>
+        <li>Sunday: Closed</li>
+      </ul>
+      <p class="text-xl sm:text-2xl mt-4">
+        Professional grooming in a welcoming environment. Every client leaves sharp and confident.
+      </p>
+    </div>
+
+    <div class="flex-1 flex flex-col gap-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.91511235713!2d-71.40593698454494!3d42.30544577918664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379aeb62e3c2d%3A0x238f9a5806b0c6fc!2sFLOW%20BARBERSHOP!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://maps.apple.com/embed?address=914+Concord+St+%232%2C+Framingham%2C+MA+01701&auid=1234567890" width="100%" height="300" allowfullscreen=""></iframe>
+    </div>
   </section>
 
-  <!-- Location & Hours -->
-  <section class="location">
-    <h2>Location & Hours</h2>
-    <p><strong>Address:</strong> 914 Concord St #2, Framingham, MA 01701</p>
-    <p><strong>Phone:</strong> (774) 204-1313</p>
-    <p><strong>Hours:</strong></p>
-    <ul>
-      <li>Monday - Saturday: 9:00 AM – 7:00 PM</li>
-      <li>Sunday: Closed</li>
-    </ul>
-    <p>Professional grooming in a welcoming environment. Every client leaves sharp and confident.</p>
+  <!-- Image Section -->
+  <section class="py-16 px-6 max-w-4xl mx-auto flex justify-center">
+    <img src="images/flowbarbershopimage1.png" alt="Flow Barbershop Interior" class="rounded-2xl shadow-lg object-cover w-full sm:w-3/4">
   </section>
 
-  <!-- Maps Section at bottom -->
-  <section class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.91511235713!2d-71.40593698454494!3d42.30544577918664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379aeb62e3c2d%3A0x238f9a5806b0c6fc!2sFLOW%20BARBERSHOP!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
-
-    <iframe src="https://maps.apple.com/embed?address=914+Concord+St+%232%2C+Framingham%2C+MA+01701&auid=1234567890" allowfullscreen=""></iframe>
-  </section>
-
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+  </script>
 </body>
 </html>
