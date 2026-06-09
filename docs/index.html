@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +19,6 @@
     --gold:#d4af37;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
 body{
     background:#000;
     color:white;
@@ -30,13 +26,11 @@ body{
     line-height:1.6;
 }
 
-/* HERO */
-
 .hero{
     min-height:100vh;
     background:
     linear-gradient(rgba(0,0,0,.80),rgba(0,0,0,.80)),
-    url('HKlogo.jpg');
+    url('images/HKlogo.jpg');
     background-repeat:no-repeat;
     background-position:center;
     background-size:65%;
@@ -55,7 +49,6 @@ body{
 .hero-content p{
     color:var(--gold);
     font-size:1.3rem;
-    letter-spacing:1px;
     margin-bottom:30px;
 }
 
@@ -83,8 +76,6 @@ body{
     transform:translateY(-3px);
 }
 
-/* SECTIONS */
-
 section{
     padding:80px 20px;
 }
@@ -106,7 +97,7 @@ h2{
     max-width:900px;
     margin:auto;
     text-align:center;
-    font-size:1.15rem;
+    font-size:1.1rem;
 }
 
 .info-grid{
@@ -128,8 +119,6 @@ h2{
     margin-bottom:15px;
 }
 
-/* GALLERY */
-
 .gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -148,8 +137,6 @@ h2{
     transform:scale(1.03);
 }
 
-/* MAP */
-
 iframe{
     width:100%;
     height:450px;
@@ -157,16 +144,12 @@ iframe{
     border-radius:15px;
 }
 
-/* FOOTER */
-
 footer{
     text-align:center;
     padding:30px;
     border-top:1px solid #222;
     color:#999;
 }
-
-/* MOBILE */
 
 @media(max-width:768px){
 
@@ -192,14 +175,10 @@ h2{
 
 <body>
 
-<!-- HERO -->
-
 <section class="hero">
     <div class="hero-content">
 
-        <p>
-            Premium Fades • Precision Cuts • Professional Grooming
-        </p>
+        <p>Premium Fades • Precision Cuts • Professional Grooming</p>
 
         <a href="https://hkpremiumcuts.booksy.com" target="_blank" class="btn btn-primary">
             BOOK APPOINTMENT
@@ -211,8 +190,6 @@ h2{
 
     </div>
 </section>
-
-<!-- ABOUT -->
 
 <section>
     <div class="container">
@@ -229,8 +206,6 @@ h2{
     </div>
 </section>
 
-<!-- CONTACT -->
-
 <section>
     <div class="container">
 
@@ -239,22 +214,17 @@ h2{
         <div class="info-grid">
 
             <div class="card">
-
                 <h3>Contact Information</h3>
 
                 <p>📍 8A Boylston St</p>
                 <p>Worcester, MA</p>
-
                 <br>
-
                 <p>📞 (774) 823-7667</p>
                 <p>✉️ Barbers@hkpremiumcuts.net</p>
                 <p>📸 @HK.premiumcuts</p>
-
             </div>
 
             <div class="card">
-
                 <h3>Business Hours</h3>
 
                 <p>Monday: 7:00 AM – 9:00 PM</p>
@@ -264,15 +234,12 @@ h2{
                 <p>Friday: 7:00 AM – 9:00 PM</p>
                 <p>Saturday: 7:00 AM – 9:00 PM</p>
                 <p>Sunday: 7:00 AM – 9:00 PM</p>
-
             </div>
 
         </div>
 
     </div>
 </section>
-
-<!-- GALLERY -->
 
 <section>
     <div class="container">
@@ -281,37 +248,30 @@ h2{
 
         <div class="gallery">
 
-         <img src="images/HK1.jpg" alt="HK Premium Cuts">
-<img src="images/HK2.jpg" alt="HK Premium Cuts">
-<img src="images/HK3.jpg" alt="HK Premium Cuts">
-<img src="images/HK4.jpg" alt="HK Premium Cuts">
-<img src="images/HK5.jpg" alt="HK Premium Cuts">
-<img src="images/HK6.jpg" alt="HK Premium Cuts">
-<img src="images/HK7.jpg" alt="HK Premium Cuts">
-<img src="images/HK8.jpg" alt="HK Premium Cuts">
-<img src="images/HK9.jpg" alt="HK Premium Cuts">
+            <img src="images/HK1.jpg" alt="HK Premium Cuts">
+            <img src="images/HK2.jpg" alt="HK Premium Cuts">
+            <img src="images/HK3.jpg" alt="HK Premium Cuts">
+            <img src="images/HK4.jpg" alt="HK Premium Cuts">
+            <img src="images/HK5.jpg" alt="HK Premium Cuts">
+            <img src="images/HK6.jpg" alt="HK Premium Cuts">
+            <img src="images/HK7.jpg" alt="HK Premium Cuts">
+            <img src="images/HK8.jpg" alt="HK Premium Cuts">
+            <img src="images/HK9.jpg" alt="HK Premium Cuts">
 
         </div>
 
     </div>
 </section>
 
-<!-- MAP -->
-
 <section>
     <div class="container">
 
         <h2>Find Us</h2>
 
-        <iframe
-        src="https://maps.google.com/maps?q=8A%20Boylston%20St%20Worcester%20MA&t=&z=15&ie=UTF8&iwloc=&output=embed"
-        loading="lazy">
-        </iframe>
+        <iframe src="https://maps.google.com/maps?q=8A%20Boylston%20St%20Worcester%20MA&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
 
     </div>
 </section>
-
-<!-- FOOTER -->
 
 <footer>
     © 2026 HK Premium Cuts • Worcester, Massachusetts
