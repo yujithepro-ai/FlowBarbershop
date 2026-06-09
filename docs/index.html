@@ -1,12 +1,13 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FLOW BARBERSHOP</title>
+  <title>HK Premium Cuts | Worcester, MA</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
   <style>
@@ -18,41 +19,39 @@
       color: white;
     }
 
-    /* Hero Section */
-.hero {
-  position: relative;
-  width: 100%;
-  min-height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('images/flowbarbershopimage2.png') no-repeat center top;
-  background-size: contain; /* Zooms image out so it all fits */
-  background-repeat: no-repeat;
-  background-position: top center;
-  color: white;
+    .hero {
+      position: relative;
+      width: 100%;
+      min-height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('images/hkpremiumcuts-hero.jpg') no-repeat center top;
+      background-size: cover;
+      background-position: center;
+      color: white;
     }
 
-    /* Dark overlay behind text */
     .hero::before {
       content: "";
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.4);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.55);
     }
 
     .hero h1 {
       position: relative;
       font-family: 'Playfair Display', serif;
       font-size: 4rem;
+      text-align: center;
       text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
-      margin: 0;
-      padding: 0 1rem;
       z-index: 1;
+      padding: 0 1rem;
     }
 
-    /* Subtitle below hero */
     .subtitle {
       text-align: center;
       font-size: 1.5rem;
@@ -60,12 +59,30 @@
       text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
     }
 
-    /* Location & Hours */
+    .booking {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .booking a {
+      display: inline-block;
+      background: white;
+      color: black;
+      padding: 14px 32px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .booking a:hover {
+      transform: scale(1.05);
+    }
+
     .location {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       text-align: center;
       padding: 4rem 2rem;
     }
@@ -74,67 +91,112 @@
       font-family: 'Playfair Display', serif;
       font-size: 3rem;
       margin-bottom: 2rem;
-      text-shadow: 1px 1px 8px rgba(0,0,0,0.7);
     }
 
-    .location p, .location ul {
-      font-size: 1.5rem;
+    .location p,
+    .location ul {
+      font-size: 1.2rem;
       margin: 0.5rem 0;
+      list-style: none;
+      padding: 0;
     }
 
-    /* Maps Section */
     .maps {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      padding: 3rem 1rem;
-      width: 100%;
+      padding: 3rem 1rem 5rem;
     }
 
     iframe {
       width: 90%;
-      max-width: 800px;
-      height: 300px;
+      max-width: 900px;
+      height: 350px;
       border: 0;
       border-radius: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 1.1rem;
+      }
+
+      .location h2 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Hero Section with background image -->
+  <!-- Hero -->
   <section class="hero">
-    <h1>FLOW BARBERSHOP</h1>
+    <h1>HK PREMIUM CUTS</h1>
   </section>
 
-  <!-- Subtitle below hero -->
+  <!-- Subtitle -->
   <div class="subtitle">
-    Fresh cuts, clean fades, and precise beard grooming
+    Premium Fades • Precision Cuts • Professional Grooming
+  </div>
+
+  <!-- Booking Button -->
+  <div class="booking">
+    <a href="https://hkpremiumcuts.booksy.com" target="_blank">
+      BOOK YOUR APPOINTMENT
+    </a>
   </div>
 
   <!-- Location & Hours -->
   <section class="location">
+
     <h2>Location & Hours</h2>
-    <p><strong>Address:</strong> 914 Concord St #2, Framingham, MA 01701</p>
-    <p><strong>Phone:</strong> (774) 204-1313</p>
-   <p><strong>Hours:</strong></p>
-<ul>
-    <li>Monday: 10 AM – 7 PM</li>
-  <li>Tuesday: 10 AM – 7 PM</li>
-  <li>Wednesday: 10 AM – 7 PM</li>
-  <li>Thursday: 10 AM – 7 PM</li>
-  <li>Friday: 10 AM – 9 PM</li>
-  <li>Saturday: 10 AM – 6 PM</li>
-  <li>Sunday: Closed</li>
-</ul>
-    <p>Professional grooming in a welcoming environment. Every client leaves sharp and confident.</p>
+
+    <p><strong>Address:</strong> 8A Boylston St, Worcester, MA</p>
+
+    <p><strong>Phone:</strong> (774) 823-7667</p>
+
+    <p><strong>Email:</strong> Barbers@hkpremiumcuts.net</p>
+
+    <p><strong>Instagram:</strong> @HK.premiumcuts</p>
+
+    <p><strong>Book Online:</strong> hkpremiumcuts.booksy.com</p>
+
+    <br>
+
+    <p><strong>Hours</strong></p>
+
+    <ul>
+      <li>Monday: 7 AM – 9 PM</li>
+      <li>Tuesday: 7 AM – 9 PM</li>
+      <li>Wednesday: 7 AM – 9 PM</li>
+      <li>Thursday: 7 AM – 9 PM</li>
+      <li>Friday: 7 AM – 9 PM</li>
+      <li>Saturday: 7 AM – 9 PM</li>
+      <li>Sunday: 7 AM – 9 PM</li>
+    </ul>
+
+    <br>
+
+    <p>
+      Worcester's destination for premium haircuts, clean fades,
+      beard grooming, and exceptional customer service.
+    </p>
+
   </section>
 
-  <!-- Google Maps Section -->
+  <!-- Google Maps -->
   <section class="maps">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.91511235713!2d-71.40593698454494!3d42.30544577918664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379aeb62e3c2d%3A0x238f9a5806b0c6fc!2sFLOW%20BARBERSHOP!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    <iframe
+      src="https://maps.google.com/maps?q=8A%20Boylston%20St%20Worcester%20MA&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
   </section>
 
 </body>
 </html>
+```
+
